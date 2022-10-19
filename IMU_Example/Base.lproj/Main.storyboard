@@ -37,11 +37,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Tx-90-Dds">
+                                <rect key="frame" x="105" y="393" width="177" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="initialize_button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7m8-tm-PZv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="initialize_buttonLabel" destination="9Tx-90-Dds" id="dZI-cj-3WC"/>
                         <outlet property="pitch_label" destination="IbD-xG-eSX" id="ig3-e8-JZu"/>
                         <outlet property="roll_label" destination="dRh-RZ-seN" id="uq7-JD-nIa"/>
                         <outlet property="yaw_label" destination="D0i-gf-RlW" id="Q3p-SZ-knS"/>
